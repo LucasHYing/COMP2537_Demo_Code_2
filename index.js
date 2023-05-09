@@ -151,6 +151,10 @@ app.get('/login', (req,res) => {
     res.render("login");
 });
 
+app.get('/cats', (req,res) => {
+    res.render("cats");
+});
+
 app.post('/submitUser', async (req,res) => {
     var username = req.body.username;
     var password = req.body.password;
