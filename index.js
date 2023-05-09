@@ -36,7 +36,7 @@ app.set('view engine', 'ejs');
 app.use(express.urlencoded({extended: false}));
 
 var mongoStore = MongoStore.create({
-	mongoUrl: `mongodb+srv://${mongodb_user}:${mongodb_password}@${mongodb_host}/sessions`,
+	mongoUrl: `mongodb+srv://rimurus:rgNkKaM5UWQZsRSi@cluster0.urjkbsm.mongodb.net/?retryWrites=true&w=majority`,
 	crypto: {
 		secret: mongodb_session_secret
 	}
